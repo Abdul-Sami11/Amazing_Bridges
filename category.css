@@ -1,0 +1,183 @@
+body {
+    text-align: center;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-size: cover;
+  }
+  
+  /* Apply a Flexbox layout to the body to ensure proper layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make sure the footer is always at the bottom */
+footer {
+  background-color: #000; /* Dark background */
+  color: white; /* White text */
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: 100%; /* Ensure full width */
+  bottom: 0;
+}
+
+/* Ensure the footer takes full width and sticks to the bottom */
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+  h1 {
+    font-weight: bolder;
+    background-color: #f2f2f2;
+  }
+  
+  .bridge-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bridge {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    width: 90%;
+  }
+  
+  .bridge.left {
+    flex-direction: row;
+  }
+  
+  .bridge.right {
+    flex-direction: row-reverse;
+  }
+  
+  .bridge .image {
+    width: 50%;
+    overflow: hidden;  /* Ensures images are contained within their bounds */
+  }
+  
+  .bridge .image img {
+    width: 100%;  /* Ensures the image takes up 100% of the container width */
+    height: auto;  /* Maintains the aspect ratio */
+  }
+  
+  .bridge .content {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+    box-sizing: border-box;  /* Ensures padding doesn't affect the width */
+  }
+  
+  .navbar {
+    overflow: hidden;
+    font-weight: bolder;
+    padding: 8px 0;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .navbar a:hover {
+    background-color: lightgrey;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  
+    .bridge {
+      flex-direction: column;
+    }
+  
+    .bridge .image, .bridge .content {
+      width: 100%;
+    }
+  }
+  
+  /* footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-column {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+  
+  .footer-column h4 {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  } */
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  }
+  .image{
+    height: 300;
+    width: 400;
+    border: 2px solid grey;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px darkgray;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms
+  }
+  
